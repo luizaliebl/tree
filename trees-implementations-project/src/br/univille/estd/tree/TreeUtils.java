@@ -65,12 +65,10 @@ public class TreeUtils {
 		Iterator<Position<E>> w = T.children(v);
 		
 		while (w.hasNext()) {
+			
 			preOrder += toStringPreOrderFile(T, w.next());
 		}
 		
-		if (!T.isRoot(v)) {
-			return preOrder + "tamanho = 1";
-		}
 		return preOrder;
 	}
 	
